@@ -2,5 +2,59 @@
 /* CSS Document */
 
 body {
-	background-color: blueviolet;
+	background-color: lightcyan;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin-left: 10%;
+	margin-right: 5%;
+	font-size: 20px;
+}
+
+header{
+	background-color:cadetblue;
+	padding-bottom:20px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+li{
+	list-style-type: none;
+	display: inline;
+	margin-right: 15px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+h1{
+	text-align: center;
+}
+
+nav{
+	text-align: center;
+}
+
+p{
+	text-align: center;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+h2,h3,h4{
+	color: darkblue;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+.posttime{
+	color: cadetblue;
+	font-size: 0.7em;
+}
+dt{
+	color: black;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-weight: bold;
+}
+
+dd{
+	color: black;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	padding-bottom: 20px;
+}
+h5{
+	text-align: center;
 }
