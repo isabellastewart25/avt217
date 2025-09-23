@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+	line-height: 1.7em;
+	background-color: lightblue;
+}
+
+#wrapper{
+	padding: 0 5%;
+	background-color: lightblue;
+	float: left;
+		
+}
+.weekly{
+	width: 45%;
+	float: left;
+	margin: 0 5%;
+}
+
+#project{
+	width: 45%;
+	float: left;
+}
+
+
+h1{
+font-family: "scarlet-script", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+a:link{
+	color: darkorchid;
+	text-decoration: none;
+}
+a:visited{
+	color: cornflowerblue;
+}
+a:hover{
+	color: hotpink;
+	text-decoration: underline;
+}
+a:active{
+	color: darkgreen;
+}
+.demo{
+	color: coral;
+}
