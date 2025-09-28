@@ -16,24 +16,25 @@
       text-align: center;
       font-size: 2.5em;
       font-family: Baskerville, serif;
-		font-weight: bold;
+      font-weight: bold;
       color: #E63946;
-      margin-top: 0
+      margin-top: 0;
     }
 
     .row {
-      text-align: center;
-      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 40px;
     }
 
     .desktop-row img {
-      width: 600px;
-      margin: 20px;
-      vertical-align: top;
+      width: 800px;
     }
 
     .mobile-row img {
-      width: 200px;
+      width: 300px;
       margin: 20px;
       vertical-align: top;
     }
@@ -45,6 +46,9 @@
   <div class="row desktop-row">
     <img src="img/my-wireframes-desktop1.png" alt="Desktop wireframe - homepage">
     <img src="img/my-wireframes-desktop2.png" alt="Desktop wireframe - about page">
+  </div>
+  
+  <div class="row desktop-row">
     <img src="img/my-wireframes-desktop3.png" alt="Desktop wireframe - menu page">
     <img src="img/my-wireframes-desktop4.png" alt="Desktop wireframe - services page">
   </div>
