@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>p2.2: Mobile and Desktop Wireframes</title>
   <style>
+    {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 2em;
@@ -22,21 +26,26 @@
     }
 
     .row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
+      text-align: center;
       margin-bottom: 40px;
     }
 
     .desktop-row img {
-      width: 800px;
+      width: 47%;
+      max-width: 800px;
+      margin: 1%;
+      display: inline-block;
+      vertical-align: top;
+      height: auto;
     }
 
     .mobile-row img {
-      width: 300px;
-      margin: 20px;
+      width: 22%;
+      max-width: 300px;
+      margin: 1%;
+      display: inline-block;
       vertical-align: top;
+      height: auto;
     }
   </style>
 </head>
@@ -46,9 +55,6 @@
   <div class="row desktop-row">
     <img src="img/my-wireframes-desktop1.png" alt="Desktop wireframe - homepage">
     <img src="img/my-wireframes-desktop2.png" alt="Desktop wireframe - about page">
-  </div>
-  
-  <div class="row desktop-row">
     <img src="img/my-wireframes-desktop3.png" alt="Desktop wireframe - menu page">
     <img src="img/my-wireframes-desktop4.png" alt="Desktop wireframe - services page">
   </div>
