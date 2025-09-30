@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*CSS Document*/
+
+.container{
+	width: 70%;
+	margin: 0 auto;
+	position:relative;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+.box1{
+	position: absolute;
+	right:5px;
+	top: 40px;
+	background-color: mediumpurple;
+	padding: 20px 50px;
+} 
+
+.box2{
+	position: fixed;
+	top: 0;
+	left: 30px;
+	background-color: lightskyblue;
+	padding: 20px 50px;
+}
+
+.insidebox2{
+	background-color: lightpink;
+}
+
+.box3{
+	position: sticky;
+	bottom: 50px;
+	background-color: pink;
+	padding: 20px 50px;
+	
+}
+
+.box4{
+	float: left;
+	right: 50px;
+	background-color: lightgreen;
+	padding: 20px 50px;
+}
+
+.box5{
+	float: left;
+	right: 40px;
+	bottom: 20px;
+	background-color: lightgoldenrodyellow;
+	padding: 20px 50px;
+}
