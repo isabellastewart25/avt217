@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+  body {
+    text-align: center;
+    background:url("../img/blue-snow.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+  }
+.mountains-of-christmas-regular {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+img{
+	width: 100px;
+}
+#container {
+margin-top: 20vh;
+
+  }
+
+  p {
+    text-transform:uppercase;
+	font-family: "Mountains of Christmas", serif; 
+	  color: #C30F16;
+	  font-size: 6em;
+}
+
+#cursive{
+font-family: "Mountains of Christmas", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 6em
+	
+	  }
+
+/* tell browser don't display it when screen is wider than 768px */
+  .mobile-only {
+    display: none;
+  }
+
+/* tell browser to do the followings when screen is at and narrower than 768px */
+  @media only screen and (max-width: 768px) {
+	  
+    body {
+ background-image: none;
+    }
+	  
+	#container {
+ margin-top: 20vh;
+    }
+	   
+    p {
+text-transform: none;
+font-family: "Mountains of Christmas", serif;
+font-style: normal;
+font-size: 5em;
+margin-top: 5vh;
+    }
+	  
+	#cursive {
+font-family: "Mountains of Christmas", serif;
+font-weight: 400;
+font-style: normal;
+	font-size: 5em
+  	}
+	  
+    .mobile-only {
+   display:block;
+    }
+	  /* Now the style and content for desktop will not be displied */
+    .desktop-only {
+  display: none;
+    }
+
+} /* don't forget to close the styles for mobile/
