@@ -1,0 +1,384 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: "hot-salsa", sans-serif;
+font-weight: 400;
+font-style: normal;
+  background-color: #F5E6C8;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  display: flex;
+	justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #F5DCAA;
+  border-bottom: 2px solid #eee;
+  flex-wrap: wrap;
+	width: 100%;
+
+
+}
+
+h1 {
+  font-size: 1.5em;
+  color: crimson;
+ font-family: "hot-salsa", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+img.logo{
+	width: 70px;
+	float: left;
+}
+
+.headertext{
+font-family: "hot-salsa", sans-serif;
+font-weight: 400;
+font-style: normal;
+color: #F82535;
+font-size:2.5em;
+float: left;
+margin-left: 50px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+	float: right;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #00A896;
+  padding: 6px 10px;
+ font-family: "hot-salsa", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 35px;
+}
+
+header nav{
+	float: right;
+}
+
+header nav ul li a:hover {
+  background-color: #e0f2f1;
+  border-radius: 6px;
+}
+
+/* Main Sections */
+main section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Welcome Section */
+#welcome h2 {
+ color: #E63946;
+font-size: 2.5em;
+font-family: "hot-salsa", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+#welcome p {
+color: #00A896;
+font-family: "latino-urw", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.75em;
+}
+
+/* About Section */
+#about {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#about img {
+  width: 45%;
+  max-width: 400px;
+  float: left;
+  margin-right: 20px;
+}
+
+.abouttext {
+  font-family: "latino-urw", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #C83E49;
+  font-size: 1.75em;
+  text-align: left;
+  width: 50%;
+  float: left;
+}
+/* Features Section */
+#features {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.featurestext {
+  margin-top: 40px;      
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #E63946;      
+  padding: 10px 15px;    
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  min-height: 60px;
+  line-height: 1.5;	
+}
+
+
+.featuresicons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.featuresicons article {
+  flex: 1 1 150px;
+  max-width: 160px;
+  padding: 15px;
+  transition: transform 0.3s;
+  text-align: center;
+  min-height: 150px;
+color: #00A896;
+font-family: "latino-urw", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+}
+
+.featuresicons article:hover {
+  transform: scale(1.1);
+}
+
+.featuresicons img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+/* Call to Action */
+#cta h2{
+	color: #E63946;
+	text-decoration: underline;
+}
+#cta .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#cta .buttons a {
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid;
+  
+}
+
+#cta .buttons a.reservation {
+
+  border-color: #006400;
+  background-color: #F5E6C8;
+font-family: "latino-urw", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+	color: #00A896;
+}
+
+#cta .buttons a.reservation:hover {
+  background-color: #d0f0c0;
+}
+
+#cta .buttons a.menu {
+  border-color: crimson;
+  background-color: #F5E6C8;
+	color: #00A896;
+font-family: "latino-urw", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+}
+
+#cta .buttons a.menu:hover {
+  background-color: #ffe5e5;
+}
+
+/* Visit Section */
+#visit {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px 20px;
+background-color: #F5DCAA;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: start;
+  text-align: left;
+}
+
+/* Heading spans all columns */
+#visit h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #a52a2a;
+  margin-bottom: 25px;
+}
+
+/* Address Column */
+#visit address {
+  grid-column: 1;
+  line-height: 1.5;
+  margin: 0;
+}
+address img {
+  width: 200px;
+height: 200px;
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  display: block;
+}
+
+address p{
+font-family: "latino-urw", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+color: #00A896;
+	text-decoration: underline
+}
+
+
+/* Phone Column */
+#visit > p:nth-of-type(1) {
+  grid-column: 2;
+ font-family: "latino-urw", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+color: #629F38;
+  margin: 0;
+  line-height: 1.5;
+	text-decoration: underline;
+}
+
+
+
+/* Hours Column */
+#visit .hours {
+  grid-column: 3;
+  color: #C83E49;
+	font-family: "latino-urw", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+  line-height: 1.5;
+	margin: 0;
+	text-decoration: underline;
+}
+#visit .hours p {
+  margin: 0 0 5px;
+}
+
+/* Social Column */
+#visit .social {
+  grid-column: 4;
+  line-height: 1.5;
+	 color: #C83E49;
+	font-family: "latino-urw", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+	margin: 0;
+	text-decoration: underline;
+}
+#visit .social p {
+  margin: 0 0 10px;
+}
+#visit .social p:nth-of-type(2) {
+  display: flex;
+  flex-direction: column; /* stack icons vertically */
+  gap: 10px;
+}
+#visit .social img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#visit .social img:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 13px;
+	color: #E63946;
+
+}
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  #visit {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  #visit > * {
+    width: 100%;
+  }
+
+  #visit .social p:nth-of-type(2) {
+    justify-content: flex-start;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  #features {
+    flex-direction: column;
+  }
+
+  #cta .buttons {
+    flex-direction: column;
+  }
+}
+
