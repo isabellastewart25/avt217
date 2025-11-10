@@ -27,7 +27,6 @@ header {
   flex-wrap: wrap;
 	width: 100%;
 
-
 }
 
 h1 {
@@ -110,7 +109,7 @@ font-size: 1.75em;
 }
 
 #about img {
-  width: 45%;
+  width: 50%;
   max-width: 400px;
   float: left;
   margin-right: 20px;
@@ -126,6 +125,7 @@ font-size: 1.75em;
   width: 50%;
   float: left;
 }
+
 /* Features Section */
 #features {
   margin: 30px 0;
@@ -133,18 +133,30 @@ font-size: 1.75em;
 }
 
 .featurestext {
-  margin-top: 40px;      
-  margin-bottom: 20px;
   font-size: 2rem;
-  color: #E63946;      
-  padding: 10px 15px;    
-  border-radius: 10px;
-  display: inline-block;
+  color: #E63946;
+  line-height: 1.5;
   text-align: center;
-  min-height: 60px;
-  line-height: 1.5;	
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 400px;
+  margin-bottom: 20px;
+  position: relative;
 }
-
+.aboutpagetext{
+  font-size: 1em;
+  color: #E63946;
+  line-height: 1.5;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 400px;
+  margin-bottom: 20px;
+}
 
 .featuresicons {
   display: flex;
@@ -178,10 +190,114 @@ font-size: 1.5em;
   margin-bottom: 10px;
 }
 
+
+/* Menu Section */
+.menu-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.menu-title {
+font-family: "hot-salsa", sans-serif;
+  color: #007c6d;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-family: "hot-salsa", sans-serif;
+  color: #2a9134;
+  font-size: 1.8em;
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 15px; /* Space below the section title */
+}
+
+/* Grid Layout */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for top and middle rows */
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+/* Specific Grid Item Styling */
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Appetizers, Sides, Desserts, and Entrees */
+.appetizers, .sides, .desserts, .entrees {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two items per section */
+  gap: 20px;
+}
+
+/* Beverages (4 items in one row) */
+.beverages {
+  grid-column: span 2; /* Span the full width of the grid */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four items in one row */
+  gap: 20px;
+}
+
+.section-title {
+  font-family: "hot-salsa", sans-serif;
+  color: #2a9134;
+  font-size: 1.8em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Item Styling */
+.item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.dish-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+	color: #00A896;
+font-family: "latino-urw", serif;
+}
+
+.price {
+  font-size: 1em;
+  margin-top: 5px;
+  font-weight: normal;
+	color: #00A896;
+font-family: "latino-urw", serif;
+}
+
+/* Hover Effect for Items */
+.item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.item img:hover {
+  opacity: 0.9;
+}
+
 /* Call to Action */
 #cta h2{
 	color: #E63946;
 	text-decoration: underline;
+	font-size: 2em;
 }
 #cta .buttons {
   display: flex;
@@ -190,43 +306,39 @@ font-size: 1.5em;
   flex-wrap: wrap;
   margin-top: 20px;
 }
-
-#cta .buttons a {
-  padding: 12px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  border: 2px solid;
-  
-}
-
-#cta .buttons a.reservation {
-
-  border-color: #006400;
+.reservation {
+	border-color: #7AC943;
+  padding: 8px 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  cursor: pointer;
   background-color: #F5E6C8;
 font-family: "latino-urw", serif;
 font-weight: 400;
 font-style: normal;
-font-size: 1.5em;
-	color: #00A896;
+font-size: 1.25em;
+color: #00A896;
 }
-
-#cta .buttons a.reservation:hover {
-  background-color: #d0f0c0;
-}
-
-#cta .buttons a.menu {
-  border-color: crimson;
+.menu {
+	border-color: #7AC943;
+  padding: 8px 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  cursor: pointer;
   background-color: #F5E6C8;
-	color: #00A896;
 font-family: "latino-urw", serif;
-font-weight: 400;
 font-style: normal;
-font-size: 1.5em;
+font-size: 1.25em;
+color: #00A896;
+}
+.reservation:hover {
+  background-color: #e63b3b;
+  color: #fff;
 }
 
-#cta .buttons a.menu:hover {
-  background-color: #ffe5e5;
+.menu:hover {
+  background-color: #e63b3b;
+  color: #fff;
 }
 
 /* Visit Section */
@@ -246,8 +358,10 @@ background-color: #F5DCAA;
 #visit h2 {
   grid-column: 1 / -1;
   text-align: center;
-  color: #a52a2a;
+  color: #C83E49;
   margin-bottom: 25px;
+	text-decoration: underline;
+	font-size: 2.5em;
 }
 
 /* Address Column */
