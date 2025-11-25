@@ -193,71 +193,103 @@ font-size: 1.5em;
 
 
 /* Menu Section */
-.menu-section {
-  text-align: center;
-  padding: 40px 20px;
+main {
+	width: 90%;
+	margin: 0 auto;
 }
 
+#container{
+	display: flex;
+}
+/*.menu-section {
+  text-align: center;
+  padding: 40px 20px;
+}*/
+
 .menu-title {
-font-family: "hot-salsa", sans-serif;
   color: #00A896;
   font-size: 2.5em;
   margin-bottom: 20px;
+text-align: center;
 }
 
-.section-title {
-  font-family: "hot-salsa", sans-serif;
-  color: #7AC943;
-  font-size: 1.8em;
-  margin-top: 0; /* Remove top margin */
-  margin-bottom: 15px; /* Space below the section title */
-	grid-column: span 2;
-}
 
 /* Grid Layout */
 .menu-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns for top and middle rows */
-  gap: 20px;
-  justify-items: center;
-  margin-bottom: 40px;
+  display:block;
+	width:50%;
+
+/*	float:left;*/
 
 }
+.menu-col{
+	float:left;
+	width:46%;
+	margin:auto 2%;
 
+}
 /* Specific Grid Item Styling */
-.grid-item {
-  display: flex;
-  flex-direction: row;
+/* .grid-item {
+ display: flex;
+  flex-direction:column;
   justify-content: space-between;
+	text-align: center;
+}*/
+.flexbox{
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+		
 }
-.grid-itemappetizers, .grid-itementrees{
-width: 40%;	
+#beverage {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
 }
 
 /* Appetizers, Sides, Desserts, and Entrees */
-.appetizers, .sides, .desserts, .entrees {
+/*.appetizers, .sides, .desserts, .entrees {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two items per section */
+  grid-template-columns: repeat(2, 1fr);  Two items per section 
   gap: 20px;
 grid-column: span 2;
-}
+}*/
 
 
 /* Beverages (4 items in one row) */
-.beverages {
-  grid-column: span 2; /* Span the full width of the grid */
+/*.beverages {
+  grid-column: span 2;  Span the full width of the grid 
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four items in one row */
+  grid-template-columns: repeat(4, 1fr); /* Four items in one row 
   gap: 20px;
-}
+}*/
 
-.section-title {
+/*.section-title {
   font-family: "hot-salsa", sans-serif;
   color: #7AC943;
   font-size: 1.8em;
+  margin-top: 0; /* Remove top margin 
+  margin-bottom: 15px; /* Space below the section title 
+	grid-column: span 2;
+		text-align: center;
+}*/
+
+h3.section-title {
+  color: #7AC943;
+  font-size: 1.6em;
   margin-top: 0;
   margin-bottom: 15px;
-  text-align: center;
+grid-column: span 2;
+text-align: center;
+}
+
+.section-title{
+  color: #7AC943;
+  font-size: 1.6em;
+  margin-top: 0;
+  margin-bottom: 15px;
+grid-column: span 2;
+text-align: center;
 }
 
 /* Item Styling */
@@ -266,7 +298,8 @@ grid-column: span 2;
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   width: 200px;
-  text-align: center;
+  text-align: left;
+	background-color:aliceblue;
 }
 
 .item img {
@@ -276,10 +309,11 @@ grid-column: span 2;
 }
 
 .dish-name {
-  font-size: 1.3em;
+  font-size: 1.25em;
   margin-top: 10px;
 	color: #00A896;
 font-family: "latino-urw", serif;
+	text-align: left;
 }
 
 .price {
