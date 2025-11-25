@@ -93,47 +93,52 @@ font-weight: 400;
 font-style: normal;
 }
 
+#welcome {
+  border: 3px solid #7AC943; 
+  padding: 20px;            
+  border-radius: 20px;
+	margin-top: 20px;
+
+}
+
 #welcome p {
 color: #00A896;
 font-family: "latino-urw", serif;
 font-weight: 400;
 font-style: normal;
 font-size: 1.75em;
+	text-align: center;
 }
 
+
 /* About Section */
-#about {
-  max-width: 900px;
+#welcomeabout {
+  max-width: 1200px;     
   margin: 20px auto;
   padding: 20px;
 }
 
-#about img {
-  width: 50%;
-  max-width: 400px;
-  float: left;
-  margin-right: 20px;
+#welcomeabout img {
+  width: 572px;          
+  height: 316px;         
+  float: left;           
+  margin-right: 20px;    
 }
 
-.abouttext {
+.welcomeabouttext {
   font-family: "latino-urw", serif;
   font-weight: 400;
   font-style: normal;
   color: #C83E49;
-  font-size: 1.75em;
+  font-size: 2em;      
   text-align: left;
-  width: 50%;
-  float: left;
+  width: calc(100% - 592px);  
+  float: left;           
+  line-height: 1.6;      
 }
 
-/* Features Section */
-#features {
-  margin: 30px 0;
-  text-align: center;
-}
-
-.featurestext {
-  font-size: 2rem;
+.aboutpagetext{
+  font-size: 2em;
   color: #E63946;
   line-height: 1.5;
   text-align: center;
@@ -143,11 +148,55 @@ font-size: 1.75em;
   border-radius: 10px;
   margin-top: 400px;
   margin-bottom: 20px;
-  position: relative;
+	clear: both;
+	text-decoration: underline;
 }
-.aboutpagetext{
+
+/* About Section */
+#about {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;                 
+  border: 3px solid #7AC943;
+  border-radius: 10px;            
+  display: flex;                 
+  align-items: flex-start;        
+  gap: 20px;                      
+}
+
+#about img {
+  width: 50%;
+  max-width: 400px;
+  float: none;                    
+  margin: 0;                      
+}
+
+.abouttext {
+  font-family: "latino-urw", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #C83E49;
   font-size: 1.25em;
-  color: #E63946;
+  text-align: left;
+  width: 50%;
+  float: none;           
+  margin: 0;                     
+}
+
+
+
+/* Features Section */
+#homepagefeatures {
+  margin: 20px 0;    
+  text-align: center;
+  padding: 20px 0;          
+}
+
+/* Features Text (Placed Above Icons) */
+.homepagefeaturestext {
+  font-size: 2em;
+  color: #C83E49;
+	text-decoration: underline;
   line-height: 1.5;
   text-align: center;
   display: block;
@@ -159,37 +208,102 @@ font-size: 1.75em;
 	clear: both;
 }
 
+/* Icons Container */
 .featuresicons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;                 
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 30px;          
 }
 
+/* Individual Feature Icon Article */
 .featuresicons article {
-  flex: 1 1 150px;
-  max-width: 160px;
-  padding: 15px;
+  flex: 1 1 200px;           
+  max-width: 220px;          
+  padding: 25px;             
   transition: transform 0.3s;
   text-align: center;
-  min-height: 150px;
-color: #00A896;
-font-family: "latino-urw", serif;
-font-weight: 400;
-font-style: normal;
-font-size: 1.5em;
+  min-height: 200px;         
+  color: #00A896;
+  font-family: "latino-urw", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8em;          
 }
 
+/* Hover Effect for Icon */
 .featuresicons article:hover {
   transform: scale(1.1);
 }
 
+/* Icon Image */
 .featuresicons img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
+  width: 120px;              
+  height: 120px;             
+  margin-bottom: 20px;       
 }
+
+#aboutpagefeatures {
+  margin: 20px 0;    
+  text-align: center;
+  padding: 20px 0;          
+}
+
+/* Features Text (Placed Above Icons) */
+.aboutfeaturestext {
+  font-size: 2em;
+  color: #C83E49;
+	text-decoration: underline;
+  line-height: 1.5;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 400px;
+  margin-bottom: 20px;
+	clear: both;
+}
+
+/* Icons Container */
+.featuresicons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;                 
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 30px;          
+}
+
+/* Individual Feature Icon Article */
+.featuresicons article {
+  flex: 1 1 200px;           
+  max-width: 220px;          
+  padding: 25px;             
+  transition: transform 0.3s;
+  text-align: center;
+  min-height: 200px;         
+  color: #00A896;
+  font-family: "latino-urw", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8em;          
+}
+
+/* Hover Effect for Icon */
+.featuresicons article:hover {
+  transform: scale(1.1);
+}
+
+/* Icon Image */
+.featuresicons img {
+  width: 120px;              
+  height: 120px;             
+  margin-bottom: 20px;       
+}
+
 
 
 /* Menu Section */
@@ -210,6 +324,7 @@ main {
   color: #00A896;
   font-size: 2.5em;
   margin-bottom: 20px;
+	margin-top: 20px;
 text-align: center;
 }
 
@@ -273,24 +388,15 @@ grid-column: span 2;
 	grid-column: span 2;
 		text-align: center;
 }*/
-
-h3.section-title {
+.section-title {
   color: #7AC943;
-  font-size: 1.6em;
+  font-size: 1.75em;
   margin-top: 0;
   margin-bottom: 15px;
 grid-column: span 2;
 text-align: center;
 }
 
-.section-title{
-  color: #7AC943;
-  font-size: 1.6em;
-  margin-top: 0;
-  margin-bottom: 15px;
-grid-column: span 2;
-text-align: center;
-}
 
 /* Item Styling */
 .item {
@@ -299,7 +405,6 @@ text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   width: 200px;
   text-align: left;
-	background-color:aliceblue;
 }
 
 .item img {
@@ -340,6 +445,7 @@ font-family: "latino-urw", serif;
 	color: #E63946;
 	text-decoration: underline;
 	font-size: 2em;
+	padding: 20px;
 }
 #cta .buttons {
   display: flex;
@@ -347,12 +453,13 @@ font-family: "latino-urw", serif;
   gap: 15px;
   flex-wrap: wrap;
   margin-top: 20px;
+	
 }
 .reservation {
 	border-color: #7AC943;
   padding: 8px 20px;
   margin-bottom: 30px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   background-color: #F5E6C8;
 font-family: "latino-urw", serif;
@@ -365,7 +472,7 @@ color: #00A896;
 	border-color: #7AC943;
   padding: 8px 20px;
   margin-bottom: 30px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   background-color: #F5E6C8;
 font-family: "latino-urw", serif;
@@ -393,14 +500,47 @@ color: #00A896;
     font-size: 28px;
 }
 
-.script-title{
+
+.specialeventtitle{
 	text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
-    color: #C83E49;
-    font-size: 28px;
+    color: #E63946;
+    font-size: 50px;
 	text-decoration: underline;
 }
+
+.eventtypestitle{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: #7AC943;
+	font-size: 35px;
+}
+
+.eventfeaturestitle{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: #C83E49;
+	font-size: 35px;
+	}
+.makeareservationtitle{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: #C83E49;
+	font-size: 35px;	
+}
+
+.reservationformtitle{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: #00A896;
+	font-size: 35px;
+}
+
 
 .service-titles {
     display: flex;
@@ -414,6 +554,7 @@ color: #00A896;
     text-align: center;
     color: #C83E49;
     font-weight: 600;
+	font-size: 2em;
 }
 
 .service-boxes {
@@ -424,13 +565,34 @@ color: #00A896;
 
 }
 
-.service-box {
+.diningin {
     background:#F5E6C8;
     border-radius: 10px;
     padding: 20px;
     width: 30%;
     box-shadow: 0 0 6px #bbb;
     text-align: center;
+	border: 3px solid #7AC943;
+	}
+
+.carryingout {
+    background:#F5E6C8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 6px #bbb;
+    text-align: center;
+	border: 3px solid #00A896;
+	}
+
+.catering {
+    background:#F5E6C8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 6px #bbb;
+    text-align: center;
+	border: 3px solid #C83E49;
 	}
 
 .service-boxes p{
@@ -462,8 +624,7 @@ color: #00A896;
 .event-icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-		
+    gap: 20px;	
 }
 
 
@@ -488,8 +649,10 @@ color: #00A896;
 
 /* FEATURES LIST */
 .features ul {
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
+	border: 3px solid #C83E49;
+	
 }
 
 .features ul li{
@@ -509,11 +672,7 @@ color: #00A896;
     border-radius: 12px;
 }
 
-/* Make Reservation Box */
-.reservation-box {
-    display: inline-block;
-    margin-top: 20px;
-}
+
 
 .reservation-box p{
 font-family: "latino-urw", serif;
@@ -528,7 +687,8 @@ color: #00A896;
 .submit-btn {
     background-color: #F5E6C8;
     padding: 14px 30px;
-    border-radius: 5px;
+    border-radius: 20px;
+	border: 3px solid #7AC943;
     cursor: pointer;
     transition: background-color 0.3s ease;
 	font-family: "latino-urw", serif;
@@ -540,7 +700,8 @@ color: #00A896;
 
 .reserve-btn:hover,
 .submit-btn:hover {
-    background-color: #7AC943;
+    text-decoration: underline;
+	color: #00A896;
 }
 
 .reserve-btn {
@@ -554,24 +715,34 @@ color: #00A896;
     display: flex;
     flex-direction: column;
     gap: 10px;
+	border: 3px solid #C83E49;
+	margin: auto;
+	padding: 50px;
+	border-radius: 20px;
 }
 
 .quick-form input {
     padding: 12px;
-    border: 2px solid #E08080;
+    border: 3px solid #7AC943;
     border-radius: 10px;
+	font-size: 16px;
+	
 }
 
 /* Dropdown styled like inputs */
 .dropdown select {
     background-color: #fff;
-    color: #333;
     font-size: 16px;
     padding: 12px;
-    border: 2px solid #E08080;
+   border: 3px solid #7AC943;
     border-radius: 10px;
     width: 100%;
     cursor: pointer;
+	font-family: "latino-urw", serif;
+font-style: normal;
+color: #00A896;
+	text-align: left;
+	
   
 }
 
@@ -592,7 +763,7 @@ color: #00A896;
 
 /* Visit Section */
 #visit {
-  max-width: 1200px;
+  width: 100%;
   margin: 40px auto;
   padding: 40px 20px;
 background-color: #F5DCAA;
@@ -686,7 +857,7 @@ font-size: 1.5em;
 }
 #visit .social p:nth-of-type(2) {
   display: flex;
-  flex-direction: column; /* stack icons vertically */
+  flex-direction: column;
   gap: 10px;
 }
 #visit .social img {
@@ -703,7 +874,7 @@ font-size: 1.5em;
 footer {
   text-align: center;
   margin: 40px 0 20px;
-  font-size: 13px;
+  font-size: 20px;
 	color: #E63946;
 
 }
