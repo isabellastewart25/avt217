@@ -23,7 +23,6 @@ header {
   align-items: center;
   padding: 15px 20px;
   background-color: #F5DCAA;
-  border-bottom: 2px solid #eee;
   flex-wrap: wrap;
 	width: 100%;
 
@@ -38,7 +37,7 @@ font-style: normal;
 }
 
 img.logo{
-	width: 70px;
+	width: 100px;
 	float: left;
 }
 
@@ -47,7 +46,7 @@ font-family: "hot-salsa", sans-serif;
 font-weight: 400;
 font-style: normal;
 color: #F82535;
-font-size:2.5em;
+font-size: 4em;
 float: left;
 margin-left: 50px;
 }
@@ -137,28 +136,15 @@ font-size: 1.75em;
   line-height: 1.6;      
 }
 
-.aboutpagetext{
-  font-size: 2em;
-  color: #E63946;
-  line-height: 1.5;
-  text-align: center;
-  display: block;
-  width: 100%;
-  padding: 10px 15px;
-  border-radius: 10px;
-  margin-top: 400px;
-  margin-bottom: 20px;
-	clear: both;
-	text-decoration: underline;
-}
+
 
 /* About Section */
 #about {
   max-width: 900px;
   margin: 20px auto;
   padding: 10px;                 
-  border: 3px solid #7AC943;
-  border-radius: 10px;            
+   border: 3px solid #7AC943;
+  border-radius: 10px;  
   display: flex;                 
   align-items: flex-start;        
   gap: 20px;                      
@@ -175,15 +161,26 @@ font-size: 1.75em;
   font-family: "latino-urw", serif;
   font-weight: 400;
   font-style: normal;
-  color: #C83E49;
+  color: #00A896;
   font-size: 1.25em;
   text-align: left;
   width: 50%;
   float: none;           
   margin: 0;                     
 }
-
-
+.aboutpagetext{
+  font-size: 2em;
+  color: #C83E49;
+  line-height: 1.5;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+	clear: both;
+	text-decoration: underline;
+}
 
 /* Features Section */
 #homepagefeatures {
@@ -244,67 +241,6 @@ font-size: 1.75em;
   height: 120px;             
   margin-bottom: 20px;       
 }
-
-#aboutpagefeatures {
-  margin: 20px 0;    
-  text-align: center;
-  padding: 20px 0;          
-}
-
-/* Features Text (Placed Above Icons) */
-.aboutfeaturestext {
-  font-size: 2em;
-  color: #C83E49;
-	text-decoration: underline;
-  line-height: 1.5;
-  text-align: center;
-  display: block;
-  width: 100%;
-  padding: 10px 15px;
-  border-radius: 10px;
-  margin-top: 400px;
-  margin-bottom: 20px;
-	clear: both;
-}
-
-/* Icons Container */
-.featuresicons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;                 
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 30px;          
-}
-
-/* Individual Feature Icon Article */
-.featuresicons article {
-  flex: 1 1 200px;           
-  max-width: 220px;          
-  padding: 25px;             
-  transition: transform 0.3s;
-  text-align: center;
-  min-height: 200px;         
-  color: #00A896;
-  font-family: "latino-urw", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.8em;          
-}
-
-/* Hover Effect for Icon */
-.featuresicons article:hover {
-  transform: scale(1.1);
-}
-
-/* Icon Image */
-.featuresicons img {
-  width: 120px;              
-  height: 120px;             
-  margin-bottom: 20px;       
-}
-
-
 
 /* Menu Section */
 main {
@@ -492,7 +428,7 @@ color: #00A896;
 	text-decoration: underline;
 }
 /*Services Section*/
-.section-title{
+.servicessectiontitle{
     text-align: center;
     margin-top: 5px;
     margin-bottom: 10px;
