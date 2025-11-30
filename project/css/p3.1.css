@@ -575,6 +575,10 @@ color: #00A896;
     margin-bottom: 10px;
 }
 
+.event-item img:hover{
+	transform: scale(1.1);
+}
+
 .event-item p {
     margin: 0;
 	font-family: "latino-urw", serif;
@@ -851,4 +855,5 @@ footer {
     flex-direction: column;
   }
 }
+
 
